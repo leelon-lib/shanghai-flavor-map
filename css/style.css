@@ -1,0 +1,1133 @@
+/* ============ Base ============ */
+:root {
+  --font-body: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+  --font-song: "SimSun", "Songti SC", "STSong", serif;
+  --font-kai: "KaiTi", "Kaiti SC", "STKaiti", serif;
+  --font-hei: "SimHei", "Microsoft YaHei", sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+
+body {
+  font-family: var(--font-body);
+  color: #26221c;
+  background: #f7f5f0;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+button { font-family: inherit; cursor: pointer; }
+
+.skip-link {
+  position: fixed; left: -999px; top: 8px; z-index: 100;
+  background: #111; color: #fff; padding: 8px 14px; border-radius: 6px;
+}
+.skip-link:focus { left: 8px; }
+
+.section-head {
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto 38px;
+  padding: 0 20px;
+}
+.section-head h2 {
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  letter-spacing: 0.08em;
+}
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: #a0772d;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.section-sub { color: #6d675d; font-size: 0.95rem; margin-top: 10px; }
+
+/* ============ Hero ============ */
+.hero {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background:
+    linear-gradient(rgba(12, 16, 20, 0.68), rgba(12, 16, 20, 0.82)),
+    url("../images/jiading-nanxiang-xiaolong.jpg") center 45% / cover no-repeat,
+    #10151a;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 115%, rgba(196, 158, 86, 0.35), transparent 55%);
+  pointer-events: none;
+}
+.hero-inner { position: relative; z-index: 2; padding: 40px 20px; max-width: 900px; }
+.hero-kicker {
+  letter-spacing: 0.55em;
+  font-size: 0.78rem;
+  color: #e4c98f;
+  margin-bottom: 18px;
+  text-indent: 0.55em;
+}
+.hero-title {
+  font-size: clamp(2.7rem, 8vw, 4.6rem);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-indent: 0.12em;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.45);
+}
+.hero-title span {
+  display: block;
+  font-size: 0.42em;
+  font-weight: 400;
+  letter-spacing: 0.9em;
+  text-indent: 0.9em;
+  color: #e4c98f;
+  margin-top: 12px;
+  font-family: var(--font-song);
+}
+.hero-sub {
+  margin: 26px auto 30px;
+  max-width: 620px;
+  color: #e9e4da;
+  font-size: clamp(0.92rem, 2vw, 1.05rem);
+}
+.hero-stats {
+  display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+.hero-stat {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(6px);
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+.hero-stat b { font-size: 1.15rem; color: #e4c98f; margin-right: 6px; }
+.hero-cta {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  padding: 12px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  transition: all 0.3s var(--ease);
+}
+.hero-cta:hover { background: #e4c98f; color: #141414; border-color: #e4c98f; }
+.hero-cta b { display: inline-block; animation: bob 1.6s infinite; }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+
+/* ============ Top nav ============ */
+.topnav {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 26px;
+  height: 58px;
+  background: rgba(255, 253, 248, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e6dfd2;
+}
+.nav-brand {
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  font-size: 0.95rem;
+  color: #8a5a1d;
+}
+.nav-links { display: flex; gap: 4px; }
+.nav-links a {
+  text-decoration: none;
+  color: #4d463c;
+  font-size: 0.88rem;
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: all 0.25s;
+}
+.nav-links a:hover, .nav-links a.active { background: #8a5a1d; color: #fff; }
+
+/* ============ Map section ============ */
+.map-section { padding: 90px 0 70px; background: #f3efe6; }
+.map-wrap { width: 100%; max-width: none; margin: 0; }
+.map-canvas {
+  position: relative;
+  background:
+    radial-gradient(ellipse at 18% 30%, rgba(255, 255, 255, 0.55), transparent 34%),
+    repeating-linear-gradient(0deg, rgba(52, 110, 138, 0.09) 0 2px, transparent 2px 36px),
+    repeating-linear-gradient(90deg, rgba(52, 110, 138, 0.09) 0 2px, transparent 2px 36px),
+    linear-gradient(180deg, #d3e6ee, #bcd8e4);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
+.map-canvas::before {
+  content: "东 海";
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  letter-spacing: 0.6em;
+  color: rgba(45, 100, 130, 0.5);
+  font-size: 1.05rem;
+  font-family: var(--font-kai);
+  pointer-events: none;
+  z-index: 2;
+}
+.map-canvas::after {
+  content: "长江口 · 杭州湾北岸";
+  position: absolute;
+  left: 4%;
+  bottom: 8%;
+  letter-spacing: 0.35em;
+  color: rgba(45, 100, 130, 0.45);
+  font-size: 0.82rem;
+  font-family: var(--font-kai);
+  pointer-events: none;
+  z-index: 2;
+}
+.map-svg {
+  position: absolute; inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.district-group { cursor: pointer; }
+.district-shape {
+  fill: #f5eeda;
+  stroke: #b3a47e;
+  stroke-width: 0.0018;
+  stroke-linejoin: round;
+  transition: fill 0.3s, stroke 0.3s;
+}
+.district-group:hover .district-shape {
+  fill: #e9ddb6;
+  stroke: #8a5a1d;
+  stroke-width: 0.0028;
+}
+.district-shape.flash {
+  stroke: #c0392b;
+  stroke-width: 0.0042;
+}
+.district-group.on-route .district-shape {
+  fill: var(--route, #c0392b);
+  fill-opacity: 0.34;
+  stroke: var(--route, #c0392b);
+  stroke-width: 0.0028;
+}
+.district-group.pulse .district-shape { animation: shapepulse 1.3s ease-in-out infinite; }
+@keyframes shapepulse {
+  0%, 100% { fill-opacity: 0.34; }
+  50% { fill-opacity: 0.58; }
+}
+.district-name-label {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  font-family: "SimHei", "Microsoft YaHei", "PingFang SC", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #3f3220;
+  background: rgba(255, 250, 236, 0.82);
+  border: 1px solid rgba(138, 90, 29, 0.4);
+  border-radius: 6px;
+  padding: 1px 7px;
+  line-height: 1.4;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  pointer-events: auto;
+  box-shadow: 0 1px 4px rgba(90, 70, 40, 0.18);
+  cursor: pointer;
+}
+.district-name-label.small { font-size: 11px; padding: 0 4px; background: rgba(255, 250, 236, 0.62); }
+.district-name-label.on-route {
+  background: rgba(192, 57, 43, 0.9);
+  border-color: rgba(192, 57, 43, 0.9);
+  color: #fff;
+}
+.map-pop {
+  position: absolute;
+  z-index: 5;
+  width: 272px;
+  height: 272px;
+  max-width: calc(100% - 16px);
+  background: #fffdf6;
+  border: 2px solid #8a5a1d;
+  border-radius: 14px;
+  box-shadow: 0 18px 44px rgba(30, 25, 15, 0.32);
+  display: flex;
+  flex-direction: column;
+  padding: 14px 14px 12px;
+  animation: popin 0.22s var(--ease);
+}
+.map-pop[hidden] { display: none; }
+@keyframes popin {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+.pop-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #8a7f6a;
+  z-index: 2;
+}
+.pop-close:hover { color: #c0392b; }
+.pop-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding-right: 26px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #8a5a1d;
+}
+.pop-name { font-size: 1.05rem; font-weight: 800; letter-spacing: 0.08em; }
+.pop-theme { font-size: 0.66rem; color: #7a6f5a; letter-spacing: 0.06em; }
+.pop-dishes {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 2px;
+}
+.pop-dish {
+  border-left: 3px solid var(--acc, #8a5a1d);
+  background: #faf5e9;
+  border-radius: 0 8px 8px 0;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.pop-dish b { font-size: 0.86rem; }
+.pop-dish span { font-size: 0.73rem; color: #7a6f5a; }
+.pop-go {
+  margin-top: 10px;
+  border: none;
+  background: var(--acc, #8a5a1d);
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  transition: opacity 0.2s;
+}
+.pop-go:hover { opacity: 0.85; }
+.map-line {
+  fill: none;
+  stroke-width: 0.0035;
+  stroke-linecap: round;
+  stroke-dasharray: 0.014 0.011;
+  opacity: 0;
+  transition: opacity 0.5s var(--ease);
+  pointer-events: none;
+}
+.map-line.active { opacity: 0.9; animation: dashmove2 1.4s linear infinite; }
+@keyframes dashmove2 { to { stroke-dashoffset: -0.05; } }
+.map-stop { opacity: 0; transition: opacity 0.5s; pointer-events: none; }
+.map-stop.active { opacity: 1; }
+.map-hint {
+  position: absolute; right: 14px; bottom: 8px;
+  font-size: 0.68rem; color: #9a8c72;
+  z-index: 2;
+}
+.district-mini-list {
+  max-width: 1400px;
+  margin: 22px auto 0;
+  display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+}
+.mini-chip {
+  border: 1px solid #c9bda2;
+  background: #fffdf7;
+  color: #57462a;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  transition: all 0.25s;
+}
+.mini-chip:hover { background: #8a5a1d; color: #fff; border-color: #8a5a1d; }
+
+.link-themes {
+  max-width: 1400px;
+  margin: 26px auto 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.theme-btn {
+  border: 1px solid #cbbca0;
+  background: #fffdf7;
+  color: #57462a;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  transition: all 0.25s;
+}
+.theme-btn:hover { border-color: #8a5a1d; }
+.theme-btn.active {
+  background: #c0392b;
+  border-color: #c0392b;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(192, 57, 43, 0.3);
+}
+
+/* ============ Journey / links section ============ */
+.links-section { padding: 90px 20px 80px; background: #faf8f3; }
+.journeys {
+  max-width: 1080px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;
+}
+.journey {
+  background: #fff;
+  border: 1px solid #e8e0d0;
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.journey:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(70, 55, 30, 0.1); }
+.journey-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.journey-emoji { font-size: 1.7rem; }
+.journey h3 { font-size: 1.15rem; letter-spacing: 0.06em; }
+.journey-desc { color: #6f6859; font-size: 0.88rem; margin-bottom: 16px; }
+.journey-stops {
+  list-style: none;
+  display: flex; flex-direction: column; gap: 8px;
+  border-left: 2px dashed #d9c9a8;
+  margin-left: 10px; padding-left: 18px;
+}
+.journey-stop { position: relative; font-size: 0.88rem; color: #4c463a; }
+.journey-stop::before {
+  content: "";
+  position: absolute; left: -24px; top: 9px;
+  width: 9px; height: 9px; border-radius: 50%;
+  background: #c0392b;
+}
+.journey-stop b { color: #23201a; }
+.journey-stop .stop-dishes { color: #9a6a2a; font-size: 0.8rem; }
+.journey-map-btn {
+  margin-top: 16px;
+  background: none; border: 1px solid #cbbca0;
+  color: #57462a; padding: 7px 16px; border-radius: 999px;
+  font-size: 0.8rem; transition: all 0.25s;
+}
+.journey-map-btn:hover { background: #c0392b; border-color: #c0392b; color: #fff; }
+
+/* ============ District sections (shared) ============ */
+.districts-section { padding: 90px 20px 60px; background: #f5f1e8; }
+.filter-bar {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  align-items: center; justify-content: center;
+  margin-top: 24px;
+}
+#searchInput {
+  min-width: 300px;
+  padding: 10px 18px;
+  border: 1px solid #cfc5af;
+  border-radius: 999px;
+  background: #fffdf8;
+  font-size: 0.9rem;
+  outline: none;
+}
+#searchInput:focus { border-color: #8a5a1d; box-shadow: 0 0 0 3px rgba(138, 90, 29, 0.14); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.chip {
+  border: 1px solid #c9bea4;
+  background: #fffdf8;
+  color: #5a4d35;
+  border-radius: 999px;
+  padding: 7px 15px;
+  font-size: 0.82rem;
+  transition: all 0.2s;
+}
+.chip:hover { border-color: #8a5a1d; }
+.chip.active { background: #8a5a1d; color: #fff; border-color: #8a5a1d; }
+.sort-btn {
+  border: 1px dashed #a89a7d;
+  background: none; color: #5a4d35;
+  border-radius: 999px; padding: 7px 15px; font-size: 0.82rem;
+  transition: all 0.2s;
+}
+.sort-btn:hover { border-style: solid; border-color: #8a5a1d; color: #8a5a1d; }
+.sort-btn.on { background: #31473a; border-color: #31473a; color: #fff; }
+
+#districtList { max-width: 1080px; margin: 0 auto; display: flex; flex-direction: column; gap: 54px; }
+.no-result { text-align: center; color: #8a7f6a; padding: 40px; font-size: 0.95rem; }
+
+.district { padding: 56px 24px 48px; scroll-margin-top: 70px; position: relative; overflow: hidden; }
+.district-head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+.district-no {
+  font-size: 0.78rem; letter-spacing: 0.2em;
+  border: 1px solid currentColor; border-radius: 999px;
+  padding: 4px 12px; opacity: 0.75;
+}
+.district-name { font-size: clamp(1.7rem, 4vw, 2.3rem); letter-spacing: 0.1em; }
+.district-en { font-size: 0.78rem; letter-spacing: 0.34em; text-transform: uppercase; opacity: 0.65; }
+.district-blurb { max-width: 760px; font-size: 0.95rem; margin-bottom: 26px; opacity: 0.86; }
+
+.gallery-area { max-width: 980px; }
+.district-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.gallery-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  color: var(--accent, #8a5a1d);
+  margin: 0 0 10px;
+}
+.gallery-thumb {
+  width: 68px;
+  height: 68px;
+  padding: 0;
+  border: 2px solid var(--card-line, #cfc5af);
+  border-radius: 10px;
+  background: var(--card-bg, #fff);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s var(--ease), border-color 0.2s, box-shadow 0.2s;
+}
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.gallery-thumb:hover { transform: translateY(-2px); border-color: var(--accent, #8a5a1d); }
+.gallery-thumb.selected {
+  border-color: var(--accent, #8a5a1d);
+  box-shadow: 0 0 0 3px var(--accent-soft, rgba(138, 90, 29, 0.25));
+}
+.gallery-thumb[hidden] { display: none; }
+.district-bottom {
+  position: relative;
+  max-width: 980px;
+  min-height: 300px;
+  margin-top: 22px;
+  background: transparent;
+  border: none;
+}
+.district-emblem {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.emblem-ring {
+  position: relative;
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  background: var(--card-bg, #fff);
+  border: 2px solid var(--acc, #8a5a1d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  box-shadow: 0 8px 22px rgba(30, 25, 15, 0.12);
+}
+.emblem-ring::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px solid var(--acc, #8a5a1d);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.emblem-ring::after {
+  content: "✶";
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--acc, #8a5a1d);
+  font-size: 11px;
+}
+.emblem-name {
+  font-family: var(--font-kai);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-indent: 0.12em;
+  color: var(--acc, #8a5a1d);
+}
+.emblem-sub {
+  font-size: 0.52rem;
+  letter-spacing: 0.26em;
+  text-indent: 0.26em;
+  color: var(--acc, #8a5a1d);
+  opacity: 0.75;
+}
+.gallery-detail {
+  position: absolute;
+  inset: 6px;
+  z-index: 4;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 18px;
+  padding: 14px;
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--card-line, #cfc5af);
+  border-radius: var(--card-radius, 14px);
+  box-shadow: var(--card-shadow, 0 12px 26px rgba(0, 0, 0, 0.12));
+}
+.gallery-detail[hidden] { display: none; }
+.gd-media {
+  position: relative;
+  padding-top: 75%;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #ddd6c8;
+}
+.gd-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gd-body { display: flex; flex-direction: column; gap: 8px; }
+.gd-meta { font-size: 0.78rem; color: var(--accent, #8a5a1d); font-weight: 700; letter-spacing: 0.05em; }
+.gd-name { font-size: 1.15rem; letter-spacing: 0.05em; }
+.gd-detail { font-size: 0.88rem; opacity: 0.88; line-height: 1.75; }
+.gd-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.gd-tags span {
+  font-size: 0.7rem;
+  border: 1px solid var(--card-line, #cfc5af);
+  border-radius: 6px;
+  padding: 2px 8px;
+  opacity: 0.8;
+}
+.wish-btn {
+  margin-top: auto;
+  align-self: flex-start;
+  background: none;
+  border: 1px solid var(--card-line);
+  color: inherit;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  opacity: 0.85;
+  transition: all 0.25s;
+}
+.wish-btn:hover { opacity: 1; }
+.wish-btn.on { background: #c0392b; border-color: #c0392b; color: #fff; }
+
+/* reveal on scroll */
+.journey { opacity: 0; transform: translateY(16px); }
+.journey.visible { opacity: 1; transform: none; }
+.journey { transition: opacity 0.6s var(--ease), transform 0.6s var(--ease); }
+
+/* ============ 16 district themes ============ */
+
+/* 01 黄浦 · Art Deco 老城厢 */
+.theme-huangpu {
+  --card-bg: #12312f;
+  --card-line: rgba(214, 178, 96, 0.45);
+  --card-radius: 4px;
+  --card-shadow: 0 22px 44px rgba(4, 20, 19, 0.4);
+  --tag-bg: rgba(214, 178, 96, 0.16);
+  --tag-ink: #d6b260;
+  --accent: #d6b260;
+  --accent-soft: rgba(214, 178, 96, 0.14);
+  background:
+    repeating-linear-gradient(135deg, rgba(214, 178, 96, 0.05) 0 2px, transparent 2px 26px),
+    #0d2624;
+  color: #efe6cf;
+}
+.theme-huangpu::before {
+  content: "海上 · 本帮";
+  position: absolute; right: 18px; top: 18px;
+  writing-mode: vertical-rl;
+  font-family: var(--font-song);
+  letter-spacing: 0.5em;
+  color: rgba(214, 178, 96, 0.5);
+  font-size: 1rem;
+}
+.theme-huangpu .district-name, .theme-huangpu h4 { font-family: Georgia, var(--font-song); }
+.theme-huangpu .dish-card { box-shadow: inset 0 0 0 1px rgba(214, 178, 96, 0.22); }
+
+/* 02 静安 · 摩登轻奢西点 */
+.theme-jingan {
+  --card-bg: #ffffff;
+  --card-line: #e6ddcf;
+  --card-radius: 2px;
+  --card-shadow: 0 18px 40px rgba(90, 70, 40, 0.12);
+  --tag-bg: #f3efe6;
+  --tag-ink: #6d5b3a;
+  --accent: #b08d57;
+  --accent-soft: #f2eadc;
+  background: linear-gradient(180deg, #fbfaf7, #f4efe7);
+  color: #23211d;
+  border-top: 1px solid #e7dfd2;
+  border-bottom: 1px solid #e7dfd2;
+}
+.theme-jingan .district-head { border-bottom: 1px solid #d9cfbd; padding-bottom: 14px; }
+.theme-jingan .district-name, .theme-jingan h4 { font-family: "Times New Roman", var(--font-song); font-weight: 500; }
+.theme-jingan .district-en { color: #b08d57; }
+.theme-jingan .dish-card { border-width: 1px; }
+
+/* 03 徐汇 · 法式梧桐 */
+.theme-xuhui {
+  --card-bg: #fdfbf6;
+  --card-line: #d9c8bd;
+  --card-radius: 6px;
+  --card-shadow: 0 16px 34px rgba(90, 50, 40, 0.14);
+  --tag-bg: #efe4e0;
+  --tag-ink: #7f2b3d;
+  --accent: #7f2b3d;
+  --accent-soft: #f3e3e0;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(126, 90, 60, 0.10), transparent 32%),
+    #f5f0e8;
+  color: #3b2c27;
+}
+.theme-xuhui .district-name, .theme-xuhui h4 { font-family: Georgia, var(--font-song); font-style: italic; }
+.theme-xuhui .district-en { color: #7f2b3d; }
+.theme-xuhui .dish-media img { border-radius: 120px 120px 0 0 / 54px 54px 0 0; }
+
+/* 04 长宁 · 街头烟火手写 */
+.theme-changning {
+  --card-bg: #fffaf0;
+  --card-line: #e8b78e;
+  --card-radius: 18px;
+  --card-shadow: 0 14px 30px rgba(160, 90, 40, 0.16);
+  --tag-bg: #fdeedd;
+  --tag-ink: #b35d22;
+  --accent: #e8622c;
+  --accent-soft: #fde9d8;
+  background: linear-gradient(180deg, #fff6e8, #fdeed8);
+  color: #4a2c18;
+}
+.theme-changning .district-name, .theme-changning h4 { font-family: var(--font-kai); }
+.theme-changning .district-no { border-radius: 4px; transform: rotate(-3deg); }
+
+/* 05 虹口 · 铅字老报纸 */
+.theme-hongkou {
+  --card-bg: #faf3e0;
+  --card-line: #3a342a;
+  --card-radius: 2px;
+  --card-shadow: 6px 6px 0 rgba(90, 70, 40, 0.18);
+  --tag-bg: #ece0c2;
+  --tag-ink: #6d5b35;
+  --accent: #a52222;
+  --accent-soft: #f0dfc4;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 27px, rgba(80, 60, 30, 0.05) 27px 28px),
+    #f2e8d2;
+  color: #2a251c;
+  border-top: 4px double #a52222;
+  border-bottom: 4px double #a52222;
+}
+.theme-hongkou::after {
+  content: "号外 · 老味道";
+  position: absolute; left: 20px; top: 20px;
+  background: #a52222; color: #f6eeda;
+  font-family: var(--font-hei);
+  font-size: 0.72rem; letter-spacing: 0.3em;
+  padding: 4px 10px;
+}
+.theme-hongkou .district-name, .theme-hongkou h4 { font-family: var(--font-song); font-weight: 700; }
+.theme-hongkou .district-head { border-bottom: 2px solid #3a342a; }
+.theme-hongkou .dish-card { border-width: 1px; border-style: solid; }
+.theme-hongkou .dish-detail { font-family: var(--font-song); }
+
+/* 06 杨浦 · 学府青春贴纸 */
+.theme-yangpu {
+  --card-bg: #fffdf4;
+  --card-line: #14306b;
+  --card-radius: 8px;
+  --card-shadow: 8px 8px 0 rgba(20, 48, 107, 0.2);
+  --tag-bg: #dce6ff;
+  --tag-ink: #14306b;
+  --accent: #ff3d5a;
+  --accent-soft: #ffe3e8;
+  background:
+    linear-gradient(rgba(20, 48, 107, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 48, 107, 0.06) 1px, transparent 1px),
+    #fff3d6;
+  background-size: 34px 34px;
+  color: #10254f;
+}
+.theme-yangpu .district-name, .theme-yangpu h4 { font-family: var(--font-hei); font-weight: 900; letter-spacing: 0.08em; }
+.theme-yangpu .district-en { color: #ff3d5a; font-weight: 700; }
+.theme-yangpu .dish-card { border-width: 3px; }
+
+/* 07 普陀 · 古寺禅意 */
+.theme-putuo {
+  --card-bg: #f5f6f2;
+  --card-line: #c9d0c6;
+  --card-radius: 10px;
+  --card-shadow: 0 12px 26px rgba(50, 70, 55, 0.12);
+  --tag-bg: #e2e8df;
+  --tag-ink: #4a5d4e;
+  --accent: #5a6d57;
+  --accent-soft: #e4eadf;
+  background: linear-gradient(180deg, #eef0ea, #e6e9e1);
+  color: #333d38;
+}
+.theme-putuo .district-name, .theme-putuo h4 { font-family: var(--font-kai); letter-spacing: 0.24em; }
+.theme-putuo::after {
+  content: "禅";
+  position: absolute; right: 26px; bottom: 16px;
+  font-family: var(--font-kai);
+  font-size: 4.6rem;
+  color: rgba(90, 109, 87, 0.14);
+}
+
+/* 08 闵行 · 古镇市集木牌 */
+.theme-minhang {
+  --card-bg: #fff8ec;
+  --card-line: #b98b5a;
+  --card-radius: 4px;
+  --card-shadow: 0 14px 30px rgba(110, 70, 30, 0.16);
+  --tag-bg: #f6e4cf;
+  --tag-ink: #9c5a24;
+  --accent: #c0392b;
+  --accent-soft: #f9e4dc;
+  background:
+    radial-gradient(circle at 6% 94%, rgba(192, 57, 43, 0.1), transparent 22%),
+    #f6ead9;
+  color: #482e17;
+}
+.theme-minhang .district-name {
+  display: inline-block;
+  background: linear-gradient(180deg, #8a5a2b, #6d421d);
+  color: #fbeed9;
+  padding: 6px 22px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(90, 55, 20, 0.3);
+  font-family: var(--font-kai);
+}
+.theme-minhang .district-head { align-items: center; }
+.theme-minhang .dish-card { border-width: 3px; border-style: double; }
+.theme-minhang .dish-tags span::before { content: "● "; color: #c0392b; font-size: 0.6rem; }
+
+/* 09 宝山 · 钢铁滨江 */
+.theme-baoshan {
+  --card-bg: #263644;
+  --card-line: #e0a04c;
+  --card-radius: 6px;
+  --card-shadow: 0 18px 38px rgba(10, 20, 28, 0.4);
+  --tag-bg: rgba(224, 160, 76, 0.15);
+  --tag-ink: #f0b468;
+  --accent: #f2a33c;
+  --accent-soft: rgba(242, 163, 60, 0.15);
+  background:
+    radial-gradient(circle at 12px 12px, rgba(255, 255, 255, 0.12) 1.5px, transparent 2.5px),
+    #1d2a35;
+  background-size: 26px 26px;
+  color: #e6eef3;
+  border-top: 10px solid;
+  border-image: repeating-linear-gradient(-45deg, #f2a33c 0 12px, #171c20 12px 24px) 1;
+}
+.theme-baoshan .district-name, .theme-baoshan h4 { font-family: var(--font-hei); font-weight: 900; }
+.theme-baoshan .district-en { color: #f2a33c; }
+.theme-baoshan .dish-card { box-shadow: inset 0 0 0 1px rgba(242, 163, 60, 0.25); }
+
+/* 10 嘉定 · 江南水墨 */
+.theme-jiading {
+  --card-bg: #fbf9f2;
+  --card-line: #b9b2a2;
+  --card-radius: 2px;
+  --card-shadow: 0 12px 24px rgba(50, 45, 35, 0.12);
+  --tag-bg: #f0ece1;
+  --tag-ink: #55503f;
+  --accent: #9e2b25;
+  --accent-soft: #f3e7e4;
+  background: #f7f4ec;
+  color: #26221a;
+}
+.theme-jiading::before {
+  content: "";
+  position: absolute; right: -60px; top: -70px;
+  width: 260px; height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(50, 45, 35, 0.12), transparent 68%);
+}
+.theme-jiading .district-name {
+  font-family: var(--font-kai);
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 6px;
+}
+.theme-jiading .district-name::after {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #26221a 0 55%, transparent 55% 60%, #26221a 60% 78%, transparent 78% 82%, #26221a 82%);
+}
+.theme-jiading .district-head::after {
+  content: "南翔";
+  margin-left: 10px;
+  width: 34px; height: 34px;
+  border: 2px solid #9e2b25;
+  color: #9e2b25;
+  display: grid; place-items: center;
+  font-family: var(--font-kai);
+  font-size: 0.72rem;
+  border-radius: 6px;
+  transform: rotate(-8deg);
+}
+.theme-jiading .dish-detail { font-family: var(--font-song); }
+
+/* 11 浦东 · 摩天霓虹 */
+.theme-pudong {
+  --card-bg: rgba(255, 255, 255, 0.07);
+  --card-line: rgba(140, 200, 255, 0.35);
+  --card-radius: 16px;
+  --card-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  --tag-bg: rgba(34, 211, 238, 0.16);
+  --tag-ink: #7de8f7;
+  --accent: #22d3ee;
+  --accent-soft: rgba(34, 211, 238, 0.13);
+  background:
+    linear-gradient(rgba(120, 160, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 160, 255, 0.07) 1px, transparent 1px),
+    radial-gradient(ellipse at 80% 0%, rgba(168, 85, 247, 0.28), transparent 45%),
+    #0c0f2c;
+  background-size: 44px 44px, 44px 44px, auto, auto;
+  color: #eaf0ff;
+}
+.theme-pudong .district-name {
+  font-family: var(--font-hei); font-weight: 900;
+  background: linear-gradient(90deg, #22d3ee, #a855f7, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.theme-pudong .district-en { color: #22d3ee; }
+.theme-pudong .dish-card { backdrop-filter: blur(8px); box-shadow: var(--card-shadow); }
+.theme-pudong .dish-card:hover { box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.5), 0 24px 60px rgba(34, 211, 238, 0.18); }
+
+/* 12 金山 · 水乡石桥 */
+.theme-jinshan {
+  --card-bg: #f6f3ea;
+  --card-line: #9db6a8;
+  --card-radius: 4px;
+  --card-shadow: 0 12px 26px rgba(50, 80, 70, 0.14);
+  --tag-bg: #e2ebe4;
+  --tag-ink: #3f6a55;
+  --accent: #b03a2e;
+  --accent-soft: #f5e4df;
+  background:
+    radial-gradient(circle at 0 100%, rgba(46, 106, 84, 0.14), transparent 30%),
+    #e3ece6;
+  color: #24342d;
+}
+.theme-jinshan .district-name {
+  font-family: var(--font-kai);
+  padding: 0 20px;
+  border-radius: 80px 80px 0 0;
+  background: linear-gradient(180deg, #5d8a74, #41664f);
+  color: #f4f1e6;
+  line-height: 1.35;
+  padding-top: 10px;
+}
+.theme-jinshan .district-head { align-items: flex-end; }
+.theme-jinshan .dish-card { border-bottom: 6px solid #b03a2e; }
+
+/* 13 松江 · 云间古邑 */
+.theme-songjiang {
+  --card-bg: #fbf7ec;
+  --card-line: #b7a98a;
+  --card-radius: 4px;
+  --card-shadow: 0 12px 26px rgba(80, 65, 40, 0.12);
+  --tag-bg: #eae4d2;
+  --tag-ink: #5d6a50;
+  --accent: #3f6f62;
+  --accent-soft: #e0e9de;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(143, 147, 160, 0.22) 0 2px, transparent 3px),
+    radial-gradient(circle at 96% 12%, rgba(143, 147, 160, 0.18) 0 2px, transparent 3px),
+    #f5f1e6;
+  color: #2f332d;
+}
+.theme-songjiang .district-name, .theme-songjiang h4 { font-family: var(--font-song); }
+.theme-songjiang .district-name {
+  border-left: 6px solid #3f6f62;
+  padding-left: 14px;
+}
+.theme-songjiang .dish-card { border-style: solid; box-shadow: inset 0 0 0 3px rgba(63, 111, 98, 0.08); }
+.theme-songjiang .dish-detail { font-family: var(--font-song); }
+
+/* 14 青浦 · 淀湖水乡 */
+.theme-qingpu {
+  --card-bg: #fbfdfd;
+  --card-line: #a9cdd4;
+  --card-radius: 18px;
+  --card-shadow: 0 16px 34px rgba(30, 90, 105, 0.16);
+  --tag-bg: #e0f0f2;
+  --tag-ink: #2f7f8f;
+  --accent: #2f7f8f;
+  --accent-soft: #e1f0f2;
+  background:
+    radial-gradient(ellipse at 50% -20%, rgba(123, 174, 100, 0.28), transparent 55%),
+    linear-gradient(180deg, #e9f4f6, #dfeef1);
+  color: #24404a;
+}
+.theme-qingpu .district-name { font-family: var(--font-kai); }
+.theme-qingpu .district-name::after {
+  content: "";
+  display: block;
+  height: 6px;
+  background:
+    radial-gradient(circle at 6px 3px, transparent 4px, #2f7f8f 4.5px, #2f7f8f 5.5px, transparent 6px),
+    radial-gradient(circle at 26px 3px, transparent 4px, #2f7f8f 4.5px, #2f7f8f 5.5px, transparent 6px);
+  background-size: 26px 8px;
+  background-repeat: repeat-x;
+  margin-top: 6px;
+}
+.theme-qingpu .dish-media { border-radius: 18px 18px 0 0; }
+
+/* 15 奉贤 · 滨海田园 */
+.theme-fengxian {
+  --card-bg: #fcfaef;
+  --card-line: #c9b87a;
+  --card-radius: 14px;
+  --card-shadow: 0 12px 26px rgba(120, 100, 40, 0.14);
+  --tag-bg: #f0ecd4;
+  --tag-ink: #7a6424;
+  --accent: #e2a63b;
+  --accent-soft: #f7edd0;
+  background:
+    radial-gradient(circle at 6% 10%, rgba(226, 166, 59, 0.4) 0 3px, transparent 4px),
+    radial-gradient(circle at 9% 16%, rgba(226, 166, 59, 0.4) 0 3px, transparent 4px),
+    radial-gradient(circle at 12% 22%, rgba(226, 166, 59, 0.3) 0 2px, transparent 3px),
+    #f3f6e3;
+  background-size: 160px 160px, 160px 160px, 160px 160px, auto;
+  color: #33402b;
+}
+.theme-fengxian .district-name, .theme-fengxian h4 { font-family: var(--font-kai); }
+.theme-fengxian .district-name {
+  display: inline-block;
+  border-bottom: 4px dotted #8a6a3f;
+  padding-bottom: 4px;
+}
+.theme-fengxian .dish-card { border: 2px dotted #c9b87a; }
+
+/* 16 崇明 · 生态绿岛 */
+.theme-chongming {
+  --card-bg: #fbf9f0;
+  --card-line: #b6c9a8;
+  --card-radius: 22px;
+  --card-shadow: 0 16px 34px rgba(50, 90, 55, 0.16);
+  --tag-bg: #e4ecdc;
+  --tag-ink: #4f7c4f;
+  --accent: #4f7c4f;
+  --accent-soft: #e8f0e2;
+  background:
+    radial-gradient(ellipse at 92% 12%, rgba(79, 124, 79, 0.22) 0 4px, transparent 5px),
+    radial-gradient(ellipse at 88% 20%, rgba(79, 124, 79, 0.16) 0 3px, transparent 4px),
+    linear-gradient(180deg, #eef3ea, #e5ecdf);
+  color: #23402c;
+}
+.theme-chongming .district-name {
+  font-family: var(--font-kai);
+  display: inline-block;
+  background: #4f7c4f;
+  color: #f4f7ee;
+  border-radius: 999px;
+  padding: 4px 26px;
+}
+.theme-chongming .district-en { color: #4f7c4f; }
+.theme-chongming .dish-card { border-width: 2px; }
+
+/* ============ About & footer & backtop ============ */
+.about-section { padding: 90px 20px 70px; background: #f7f5f0; }
+.about-grid {
+  max-width: 1080px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1.4fr; gap: 34px;
+}
+.about-note, .about-credits {
+  background: #fff;
+  border: 1px solid #e6dfd2;
+  border-radius: 14px;
+  padding: 26px;
+}
+.about-note h3, .about-credits h3 { font-size: 1rem; margin-bottom: 10px; color: #8a5a1d; }
+.about-note p, .about-credits p { font-size: 0.88rem; color: #5f594d; margin-bottom: 14px; }
+.about-credits a { color: #8a5a1d; }
+#credits { list-style: none; display: flex; flex-direction: column; gap: 6px; max-height: 340px; overflow-y: auto; }
+#credits li { font-size: 0.78rem; color: #6d675d; display: flex; gap: 8px; align-items: baseline; }
+#credits .dot { color: #c0392b; }
+#credits a { text-decoration: none; border-bottom: 1px dotted #cbbca0; }
+
+.site-footer {
+  background: #171c20;
+  color: #b9b1a2;
+  text-align: center;
+  padding: 34px 20px;
+  font-size: 0.85rem;
+}
+.site-footer .footer-meta { font-size: 0.72rem; color: #7c766b; margin-top: 6px; }
+
+#backTop {
+  position: fixed; right: 22px; bottom: 22px; z-index: 60;
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: #8a5a1d;
+  color: #fff;
+  font-size: 1.15rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  opacity: 0; pointer-events: none;
+  transform: translateY(14px);
+  transition: all 0.3s var(--ease);
+}
+#backTop.show { opacity: 1; pointer-events: auto; transform: none; }
+#backTop:hover { background: #c0392b; }
+
+/* ============ Responsive ============ */
+@media (max-width: 900px) {
+  .topnav { padding: 0 12px; }
+  .nav-links a { padding: 8px 9px; font-size: 0.8rem; }
+  .nav-brand { display: none; }
+  .about-grid { grid-template-columns: 1fr; }
+  .district { padding: 44px 16px 38px; }
+  .district-head { gap: 10px; }
+  #searchInput { min-width: 260px; }
+}
+
+@media (max-width: 640px) {
+  .district-bottom { min-height: 520px; }
+  .emblem-ring { width: 112px; height: 112px; }
+  .emblem-name { font-size: 1.6rem; }
+  .gallery-detail {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav-links { justify-content: space-between; width: 100%; }
+  .topnav { padding: 0 8px; }
+  .hero-title { letter-spacing: 0.06em; text-indent: 0.06em; }
+  .map-hint { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  html { scroll-behavior: auto; }
+}

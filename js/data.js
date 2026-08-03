@@ -24,7 +24,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.8,
           "detail": "创建于 1932 年的老字号，上海生煎“清水派”代表：半发酵面皮、肉馅不加皮冻，煎出厚而焦脆的底板，肉香与麦香交融。制作技艺 2019 年入选黄浦区非物质文化遗产。",
-          "img": "images/huangpu-dahu-shengjian.jpg",
+          "img": "images/thumbs/huangpu-dahu-shengjian.jpg",
+          "detailImg": "images/medium/huangpu-dahu-shengjian.jpg",
           "credit": {
             "title": "File:Shengjian Mantou on a Pan.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Shengjian_Mantou_on_a_Pan.jpg",
@@ -44,7 +45,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.7,
           "detail": "始创于 1921 年的“排骨年糕大王”：猪排拍松上浆后炸至金黄酥脆，配宁波水磨年糕，淋甜面酱与辣酱油，咸甜交织，是几代上海人的市井记忆，技艺同样入选黄浦区非遗。",
-          "img": "images/huangpu-paigu-niangao.jpg",
+          "img": "images/thumbs/huangpu-paigu-niangao.jpg",
+          "detailImg": "images/medium/huangpu-paigu-niangao.jpg",
           "credit": {
             "title": "File:Xiandelai Pork chop with Nian gao-20240106.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Xiandelai_Pork_chop_with_Nian_gao-20240106.jpg",
@@ -64,7 +66,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.8,
           "detail": "源自嘉定南翔，却在豫园“南翔馒头店”发扬为上海点心的金字招牌：皮薄如纸、馅足汁多，“轻轻提，慢慢移，先开窗，后喝汤”。与嘉定、虹口一脉相承。",
-          "img": "images/huangpu-yuyuan-xiaolong.jpg",
+          "img": "images/thumbs/huangpu-yuyuan-xiaolong.jpg",
+          "detailImg": "images/medium/huangpu-yuyuan-xiaolong.jpg",
           "credit": {
             "title": "File:Xiao Long Bao by Junhao!.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Xiao_Long_Bao_by_Junhao!.jpg",
@@ -96,7 +99,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "1928 年诞生的中国第一家国货西餐馆，张爱玲笔下的“栗子蛋糕”、《繁花》里爷叔的心头好。当季栗子打成的栗蓉铺满蛋糕，白脱奶油绵密香滑。",
-          "img": "images/jingan-lizi-dangao.jpg",
+          "img": "images/thumbs/jingan-lizi-dangao.jpg",
+          "detailImg": "images/medium/jingan-lizi-dangao.jpg",
           "credit": {
             "title": "File:Making mont Blanc cup cake.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Making_mont_Blanc_cup_cake.jpg",
@@ -116,7 +120,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.7,
           "detail": "静安宾馆看家名菜，曾被评为“上海第一名菜”。河虾仁上浆滑油，成菜晶莹剔透、粒粒弹嫩，仅以薄芡与少许盐吊出虾的本味。",
-          "img": "images/jingan-shuijing-xiaren.jpg",
+          "img": "images/thumbs/jingan-shuijing-xiaren.jpg",
+          "detailImg": "images/medium/jingan-shuijing-xiaren.jpg",
           "credit": {
             "title": "File:Shrimp Stir-fried with Dragon Well Tea.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Shrimp_Stir-fried_with_Dragon_Well_Tea.jpg",
@@ -148,7 +153,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.7,
           "detail": "“点心大王”乔家栅的镇店名点：糯米汤团煮熟沥干，滚上崇明大红袍赤豆炒磨的紫红豆沙粉，冷热皆宜、便于携带，是上海市级非遗糕点技艺的代表。",
-          "img": "images/xuhui-leishayuan.jpg",
+          "img": "images/thumbs/xuhui-leishayuan.jpg",
+          "detailImg": "images/medium/xuhui-leishayuan.jpg",
           "credit": {
             "title": "File:Funwari Meijin Kinako Mochi 01.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Funwari_Meijin_Kinako_Mochi_01.jpg",
@@ -168,7 +174,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "龙华寺素斋传承千年佛门素食传统，一碗素面浇头丰盛，素鸭、香菇、面筋卤香入味，汤头清鲜，素斋制作技艺亦是徐汇的非物质文化遗产。",
-          "img": "images/xuhui-longhua-sumian.jpg",
+          "img": "images/thumbs/xuhui-longhua-sumian.jpg",
+          "detailImg": "images/medium/xuhui-longhua-sumian.jpg",
           "credit": {
             "title": "File:Vietnamese vegetarian crab noodle soup.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Vietnamese_vegetarian_crab_noodle_soup.jpg",
@@ -200,7 +207,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.5,
           "detail": "长宁老字号华德饭店的招牌，以“个大、皮薄、馅多、实惠”闻名，还曾被新华社“千城早餐”点名，是长宁人早餐桌上的烟火气。",
-          "img": "images/changning-huade-dabao.jpg",
+          "img": "images/thumbs/changning-huade-dabao.jpg",
+          "detailImg": "images/medium/changning-huade-dabao.jpg",
           "credit": {
             "title": "File:Nangua Baozi (chinese dumplings).jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Nangua_Baozi_(chinese_dumplings).jpg",
@@ -220,7 +228,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "扎根长宁几十年的本帮馆子，招牌油爆虾壳酥肉弹，裹着浓油赤酱的甜咸汁，与毛蟹炒年糕、响油鳝丝并称本帮老三样。",
-          "img": "images/changning-jinfen-youxia.jpg",
+          "img": "images/thumbs/changning-jinfen-youxia.jpg",
+          "detailImg": "images/medium/changning-jinfen-youxia.jpg",
           "credit": {
             "title": "File:Xiaren Du Mianjin 虾仁独面筋 (Braised Fried Gluten with Shrimp).jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Xiaren_Du_Mianjin_%E8%99%BE%E4%BB%81%E7%8B%AC%E9%9D%A2%E7%AD%8B_(Braised_Fried_Gluten_with_Shrimp).jpg",
@@ -252,7 +261,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.7,
           "detail": "山阴路上开了约 70 年的“虹口排队王”，小笼属南翔一脉，皮薄馅大、汤汁鲜甜不腻，配一碟香醋，是虹口小囡从小吃到大的味道。",
-          "img": "images/hongkou-wanshouzhai-xiaolong.jpg",
+          "img": "images/thumbs/hongkou-wanshouzhai-xiaolong.jpg",
+          "detailImg": "images/medium/hongkou-wanshouzhai-xiaolong.jpg",
           "credit": {
             "title": "File:2019-02-22 Xiaolongbao in \"Taste Of Shanghai\" restaurant, Sydney, Australia.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:2019-02-22_Xiaolongbao_in_%22Taste_Of_Shanghai%22_restaurant,_Sydney,_Australia.jpg",
@@ -272,7 +282,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "虹口糕团厂的招牌，糯米团现揉现包：咸口夹油条、榨菜、肉松，甜口夹芝麻白糖，咬一口软糯拉丝，是老上海糕团文化的活化石。",
-          "img": "images/hongkou-niangaotuan.jpg",
+          "img": "images/thumbs/hongkou-niangaotuan.jpg",
+          "detailImg": "images/medium/hongkou-niangaotuan.jpg",
           "credit": {
             "title": "File:Chinese rice cake 3.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Chinese_rice_cake_3.jpg",
@@ -304,7 +315,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.7,
           "detail": "平凉路上始于 1958 年的清真老店，“清真菜点制作技艺”是上海市级非遗。一两二面皮配一两四牛肉馅，平底锅煎出金脆外壳，一锅 50 只仍供不应求。",
-          "img": "images/yangpu-yixinzhai-niuroujianbao.jpg",
+          "img": "images/thumbs/yangpu-yixinzhai-niuroujianbao.jpg",
+          "detailImg": "images/medium/yangpu-yixinzhai-niuroujianbao.jpg",
           "credit": {
             "title": "File:牛肉锅贴 Pan-fried Beef Dumplings - Ants Bistro.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:%E7%89%9B%E8%82%89%E9%94%85%E8%B4%B4_Pan-fried_Beef_Dumplings_-_Ants_Bistro.jpg",
@@ -336,7 +348,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "成名于清乾隆年间的百年老字号：红烧羊肉以老汤加黄酒焖煮，卤浓肥甜；白切羊肉原汁原味、酥而不烂，2007 年入选上海市非遗。",
-          "img": "images/putuo-zhenru-yangrou.jpg",
+          "img": "images/thumbs/putuo-zhenru-yangrou.jpg",
+          "detailImg": "images/medium/putuo-zhenru-yangrou.jpg",
           "credit": {
             "title": "File:Braised Lamb Neck – Scallion Pancakes, Pickled Vegetables.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Braised_Lamb_Neck_%E2%80%93_Scallion_Pancakes,_Pickled_Vegetables.jpg",
@@ -356,7 +369,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "安远路玉佛寺的素斋远近闻名，素鸭豆香浓郁、几可乱真，素面清鲜暖胃，不少香客专程为这一口而来，承载着海派佛教饮食文化。",
-          "img": "images/putuo-yufo-suzhai.jpg",
+          "img": "images/thumbs/putuo-yufo-suzhai.jpg",
+          "detailImg": "images/medium/putuo-yufo-suzhai.jpg",
           "credit": {
             "title": "File:A Five selections of Chinese Vegetarian Platter in Hong Kong.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:A_Five_selections_of_Chinese_Vegetarian_Platter_in_Hong_Kong.jpg",
@@ -388,7 +402,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "七宝老街一品方糕店的招牌，闵行区非物质文化遗产。糯米粉蒸制、内嵌豆沙或黑洋酥，口感软糯不粘牙，寓意“年年高升”。",
-          "img": "images/minhang-qibao-fanggao.jpg",
+          "img": "images/thumbs/minhang-qibao-fanggao.jpg",
+          "detailImg": "images/medium/minhang-qibao-fanggao.jpg",
           "credit": {
             "title": "File:Cake Cafe Red Beans & Rice Partly Eaten.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Cake_Cafe_Red_Beans_%26_Rice_Partly_Eaten.jpg",
@@ -408,7 +423,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.7,
           "detail": "始于北宋的老街汤圆店现包现煮，皮薄馅大，鲜肉、黑洋酥、荠菜三种馅各有拥趸，大颗汤圆两三个就管饱。",
-          "img": "images/minhang-qibao-tangyuan.jpg",
+          "img": "images/thumbs/minhang-qibao-tangyuan.jpg",
+          "detailImg": "images/medium/minhang-qibao-tangyuan.jpg",
           "credit": {
             "title": "File:Glutinous Rive Balls (Tang Yuan).jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Glutinous_Rive_Balls_(Tang_Yuan).jpg",
@@ -440,7 +456,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.7,
           "detail": "吴淞口的经典江鲜，鮰鱼胶质丰厚，以本帮“浓油赤酱”技法烧至色泽亮红、酱汁粘唇，入口咸中带甜、鱼肉细嫩，是宝山非遗美食。",
-          "img": "images/baoshan-hongshaohuiyu.jpg",
+          "img": "images/thumbs/baoshan-hongshaohuiyu.jpg",
+          "detailImg": "images/medium/baoshan-hongshaohuiyu.jpg",
           "credit": {
             "title": "File:202403 Braised Rice-Fish from Qingtian.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:202403_Braised_Rice-Fish_from_Qingtian.jpg",
@@ -460,7 +477,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.5,
           "detail": "宝山区非物质文化遗产。鲜活鱼肉去骨剁泥、沿同一方向持续搅打，从虎口挤出，在 40℃ 微沸水中养熟，莹润如玉、弹嫩爽滑，是节庆餐桌的团圆味。",
-          "img": "images/baoshan-luodian-yuyuan.jpg",
+          "img": "images/thumbs/baoshan-luodian-yuyuan.jpg",
+          "detailImg": "images/medium/baoshan-luodian-yuyuan.jpg",
           "credit": {
             "title": "File:Fish Ball Hor Fun Rice Noodle Soup Salt-Baked Chicken Rice - Hakka Teahouse, Glen Waverley AUD9 lunch special.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Fish_Ball_Hor_Fun_Rice_Noodle_Soup_Salt-Baked_Chicken_Rice_-_Hakka_Teahouse,_Glen_Waverley_AUD9_lunch_special.jpg",
@@ -492,7 +510,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.9,
           "detail": "始创于清同治十年（1871 年），国家级非物质文化遗产。不发酵精面粉做皮，每只面皮仅 1.5 毫米厚、重 8 克，包入 16 克馅料、捏出 18 个以上折褶，蒸熟后晶莹剔透，一咬一包汤。",
-          "img": "images/jiading-nanxiang-xiaolong.jpg",
+          "img": "images/thumbs/jiading-nanxiang-xiaolong.jpg",
+          "detailImg": "images/medium/jiading-nanxiang-xiaolong.jpg",
           "credit": {
             "title": "File:Xiaolongbao Shanghai.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Xiaolongbao_Shanghai.jpg",
@@ -524,7 +543,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "“沪郊百宝”之一，高桥人传承百年的本帮糕饼：外皮层层酥松，内馅有豆沙、核桃、红枣等口味，蓬松甜软，是老浦东茶桌上的点心记忆。",
-          "img": "images/pudong-gaoqiao-songbing.jpg",
+          "img": "images/thumbs/pudong-gaoqiao-songbing.jpg",
+          "detailImg": "images/medium/pudong-gaoqiao-songbing.jpg",
           "credit": {
             "title": "File:Sweet potato flaky pastry.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Sweet_potato_flaky_pastry.jpg",
@@ -544,7 +564,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.7,
           "detail": "三林本帮菜“老八样”中的主角：鸡丝、火腿丝、笋丝三色相间，入盅压实后反扣装盘、浇上清汤，刀工与火候尽显本帮宴席功夫。",
-          "img": "images/pudong-sanlin-kousansi.JPG",
+          "img": "images/thumbs/pudong-sanlin-kousansi.jpg",
+          "detailImg": "images/medium/pudong-sanlin-kousansi.jpg",
           "credit": {
             "title": "File:Braised Shredded Chicken with Ham and Dried Tofu 2011-04.JPG",
             "url": "https://commons.wikimedia.org/wiki/File:Braised_Shredded_Chicken_with_Ham_and_Dried_Tofu_2011-04.JPG",
@@ -576,7 +597,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.8,
           "detail": "清咸丰二年（1852 年）丁义兴酒店的招牌，以太湖良种枫泾猪前蹄为料，经“八道工艺”与百年老汤烧制，酱红透亮、酥烂入味、肥而不腻，是枫泾四宝之首。",
-          "img": "images/jinshan-fengjing-dingti.jpg",
+          "img": "images/thumbs/jinshan-fengjing-dingti.jpg",
+          "detailImg": "images/medium/jinshan-fengjing-dingti.jpg",
           "credit": {
             "title": "File:Braised pig trotters.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Braised_pig_trotters.jpg",
@@ -596,7 +618,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.5,
           "detail": "因乾隆年间枫泾状元蔡以台而得名，寓意金榜题名。糯米粉加桂花糖蒸制，清甜软糯、香气悠长，与丁蹄、天香豆腐干、金枫黄酒并称“枫泾四宝”。",
-          "img": "images/jinshan-fengjing-zhuangyuangao.jpg",
+          "img": "images/thumbs/jinshan-fengjing-zhuangyuangao.jpg",
+          "detailImg": "images/medium/jinshan-fengjing-zhuangyuangao.jpg",
           "credit": {
             "title": "File:HK Sheung Wan 金鑽海鮮皇宮酒家 Daimond Restaurant 甜品 Dessert 桂花榚 Osmanthus Jelly cake Mar-2012.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:HK_Sheung_Wan_%E9%87%91%E9%91%BD%E6%B5%B7%E9%AE%AE%E7%9A%87%E5%AE%AE%E9%85%92%E5%AE%B6_Daimond_Restaurant_%E7%94%9C%E5%93%81_Dessert_%E6%A1%82%E8%8A%B1%E6%A6%9A_Osmanthus_Jelly_cake_Mar-2012.jpg",
@@ -628,7 +651,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "始产于明代、已有 400 多年历史的上海市非遗。以优质粳米蒸制，松、软、香、甜、肥，糕面可印“花好月圆”等吉语，是松江人的伴手礼。",
-          "img": "images/songjiang-yexie-ruangao.jpg",
+          "img": "images/thumbs/songjiang-yexie-ruangao.jpg",
+          "detailImg": "images/medium/songjiang-yexie-ruangao.jpg",
           "credit": {
             "title": "File:Fa gao 笑口发糕 Steamed rice-cakes.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Fa_gao_%E7%AC%91%E5%8F%A3%E5%8F%91%E7%B3%95_Steamed_rice-cakes.jpg",
@@ -648,7 +672,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "松江张泽的伏羊传统：白切羊肉皮嫩肉酥，配一碗羊杂汤与一碟蘸料，讲究原汁原味，每年伏天“吃羊肉、喝烧酒”的习俗延续百年。",
-          "img": "images/songjiang-zhangze-yangrou.jpg",
+          "img": "images/thumbs/songjiang-zhangze-yangrou.jpg",
+          "detailImg": "images/medium/songjiang-zhangze-yangrou.jpg",
           "credit": {
             "title": "File:Instant-boiled mutton with sesame sauce.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Instant-boiled_mutton_with_sesame_sauce.jpg",
@@ -680,7 +705,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "朱家角古镇的招牌：五花肉用粽叶裹起、稻草扎紧，入老卤焖煮，肉酥酱香中带着粽叶清香，一只只码在锅边，是最地道的水乡下酒菜。",
-          "img": "images/qingpu-zhujiajiao-zharou.jpg",
+          "img": "images/thumbs/qingpu-zhujiajiao-zharou.jpg",
+          "detailImg": "images/medium/qingpu-zhujiajiao-zharou.jpg",
           "credit": {
             "title": "File:Red braised pork belly 红烧肉 hóngshāoròu 23 January 2025 Filipinas4.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Red_braised_pork_belly_%E7%BA%A2%E7%83%A7%E8%82%89_h%C3%B3ngsh%C4%81or%C3%B2u_23_January_2025_Filipinas4.jpg",
@@ -700,7 +726,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.7,
           "detail": "古镇阿婆们现包现煮，糯米油润、蛋黄流油、肉块酥烂，名气不输五芳斋；与扎肉、大闸蟹、肉馅烧卖共同构成朱家角的小吃图景。",
-          "img": "images/qingpu-ajiaozong.jpg",
+          "img": "images/thumbs/qingpu-ajiaozong.jpg",
+          "detailImg": "images/medium/qingpu-ajiaozong.jpg",
           "credit": {
             "title": "File:Kyoto zongzi japonais.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Kyoto_zongzi_japonais.jpg",
@@ -732,7 +759,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "庄行羊肉烧酒食俗可追溯 600 余年，是上海市级非遗。湖羊以老汤慢火焖煮、不加酱色，白切羊肉皮肉酥嫩、入口即化，配一口烧酒，鲜香暖身。",
-          "img": "images/fengxian-zhuanghang-yangrou.jpg",
+          "img": "images/thumbs/fengxian-zhuanghang-yangrou.jpg",
+          "detailImg": "images/medium/fengxian-zhuanghang-yangrou.jpg",
           "credit": {
             "title": "File:Braised lamb shank with a potato rösti.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Braised_lamb_shank_with_a_potato_r%C3%B6sti.jpg",
@@ -752,7 +780,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.5,
           "detail": "奉贤特产黄桃，果肉金黄厚实、甜脆多汁，是上海人心中的夏日限定；黄桃罐头与黄桃汽水，更是几代上海小囡的童年味道。",
-          "img": "images/fengxian-huangtao.jpg",
+          "img": "images/thumbs/fengxian-huangtao.jpg",
+          "detailImg": "images/medium/fengxian-huangtao.jpg",
           "credit": {
             "title": "File:Australasian peaches in the fruit shop at North Point.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Australasian_peaches_in_the_fruit_shop_at_North_Point.jpg",
@@ -784,7 +813,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.7,
           "detail": "崇明人过年必蒸的糯米糕：糯米粉拌入红枣、核桃、蜜饯与猪油，蒸得软糯香甜，切片煎食外脆内糯，是“鱼米之乡”的年味象征。",
-          "img": "images/chongming-chongminggao.jpg",
+          "img": "images/thumbs/chongming-chongminggao.jpg",
+          "detailImg": "images/medium/chongming-chongminggao.jpg",
           "credit": {
             "title": "File:Biko (sticky rice cake).jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Biko_(sticky_rice_cake).jpg",
@@ -804,7 +834,8 @@ window.SH_FOOD = {
           ],
           "rating": 4.6,
           "detail": "崇明金瓜又叫金丝瓜，被誉为“植物海蜇”。瓜瓤自然成丝，焯水后浇葱油凉拌，爽脆鲜甜，是崇明菜桌上最清爽的一道。",
-          "img": "images/chongming-jinguasi.jpg",
+          "img": "images/thumbs/chongming-jinguasi.jpg",
+          "detailImg": "images/medium/chongming-jinguasi.jpg",
           "credit": {
             "title": "File:Spaghetti Squash Marinara.jpg",
             "url": "https://commons.wikimedia.org/wiki/File:Spaghetti_Squash_Marinara.jpg",

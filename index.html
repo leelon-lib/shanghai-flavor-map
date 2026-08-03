@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="上海味道地图：十六区特色美食图鉴，菜品详情、口味、评分与图片，一页吃遍上海。">
+  <title>上海味道地图 · Shanghai Flavor Atlas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#districts">跳到各区寻味</a>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <p class="hero-kicker">SHANGHAI · FLAVOR ATLAS</p>
+      <h1 class="hero-title">上海味道<span>地图</span></h1>
+      <p class="hero-sub">一城十六区，每区一味风。从老城厢到崇明岛，把 31 道招牌菜连成一张会发光的味觉地图。</p>
+      <div class="hero-stats" id="heroStats"></div>
+      <a class="hero-cta" href="#map">展开寻味地图 <b>↓</b></a>
+    </div>
+  </header>
+
+  <nav class="topnav" id="topnav">
+    <span class="nav-brand">沪味十六区</span>
+    <div class="nav-links">
+      <a href="#map" data-nav="map">寻味地图</a>
+      <a href="#links" data-nav="links">风味连线</a>
+      <a href="#districts" data-nav="districts">各区寻味</a>
+      <a href="#about" data-nav="about">图源说明</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="map-section" id="map">
+      <header class="section-head">
+        <p class="eyebrow">01 · FLAVOR MAP</p>
+        <h2>寻味地图</h2>
+        <p class="section-sub">以真实上海区划地图为底图，十六个辖区边界清晰可辨。点击任一辖区直达详情，或先选一条"风味连线"，看味道如何跨区相连。</p>
+      </header>
+      <div class="map-wrap">
+        <div class="map-canvas" id="mapCanvas">
+          <svg class="map-svg" id="mapSvg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" aria-label="上海 16 区寻味地图"></svg>
+          <p class="map-hint">区界数据：民政部行政区划（DataV GeoAtlas）</p>
+        </div>
+      </div>
+      <div class="district-mini-list" id="districtMiniList"></div>
+      <div class="link-themes" id="linkThemes"></div>
+    </section>
+
+    <section class="links-section" id="links">
+      <header class="section-head">
+        <p class="eyebrow">02 · FLAVOR LINKS</p>
+        <h2>风味连线</h2>
+        <p class="section-sub">六条跨区味觉线索，把小笼、羊肉、糕团、本帮浓油赤酱与江海风物串成一张网络——这正是上海味道的联系方式。</p>
+      </header>
+      <div class="journeys" id="journeys"></div>
+    </section>
+
+    <section class="districts-section" id="districts">
+      <header class="section-head">
+        <p class="eyebrow">03 · 16 DISTRICTS</p>
+        <h2>各区寻味</h2>
+        <div class="filter-bar">
+          <input id="searchInput" type="search" placeholder="搜索菜品或地区，如：小笼 / 羊肉 / 崇明…" autocomplete="off">
+          <div class="chips" id="tasteChips"></div>
+          <button id="sortRating" class="sort-btn" type="button">按评分排序 ↗</button>
+        </div>
+      </header>
+      <div id="districtList"></div>
+      <p class="no-result" id="noResult" hidden>没有找到匹配的菜品，换个关键词试试？</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <header class="section-head">
+        <p class="eyebrow">04 · NOTES &amp; CREDITS</p>
+        <h2>关于这份地图</h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-note">
+          <h3>数据说明</h3>
+          <p>各区代表菜依据地方志、政府非遗名录、老字号公开资料与媒体报道整理；<b>评分</b>为综合口碑的参考值（满分 5.0），口味描述为普遍共识，实际体验因人而异。</p>
+          <h3>使用提示</h3>
+          <p>点击顶部"各区寻味"按口味筛选；在卡片上点击"想打卡"会存入浏览器本地；寻味地图以真实区划为界，连线主题可高亮关联辖区。</p>
+        </div>
+        <div class="about-credits">
+          <h3>菜品图片来源</h3>
+          <p>全部照片来自 <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> 的自由授权作品，点击下方条目可查看原图与授权信息。</p>
+          <ul id="credits"></ul>
+          <h3>地图数据来源</h3>
+          <p>上海 16 区边界数据来自阿里云 DataV GeoAtlas（<a href="https://geo.datav.aliyun.com/areas_v3/bound/310000_full.json" target="_blank" rel="noopener">310000_full.json</a>），原始区划源于民政部全国行政区划信息，仅为示意展示。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>沪味十六区 · 上海味道地图 — 用一顿饭的时间，认识一座城。</p>
+    <p class="footer-meta">非官方整理 · 图片版权归原作者所有（详见图源说明）</p>
+  </footer>
+
+  <button id="backTop" type="button" title="回到顶部" aria-label="回到顶部">↑</button>
+
+  <script src="js/shanghai.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

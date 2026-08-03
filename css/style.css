@@ -60,7 +60,7 @@ button { font-family: inherit; cursor: pointer; }
   color: #fff;
   background:
     linear-gradient(rgba(12, 16, 20, 0.68), rgba(12, 16, 20, 0.82)),
-    url("../images/jiading-nanxiang-xiaolong.jpg") center 45% / cover no-repeat,
+    url("../images/hero.jpg") center 45% / cover no-repeat,
     #10151a;
   overflow: hidden;
 }
